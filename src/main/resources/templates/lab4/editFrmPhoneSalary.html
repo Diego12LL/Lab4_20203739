@@ -10,7 +10,16 @@
 </head>
 <body>
 <main>
+
+
   <div class="container px-4 py-5">
+
+    <div claaa="row">
+      <a class="btn btn-primary mt-4 mb-4" th:href="@{/employees}">Empleados</a>
+      <a class="btn btn-primary mt-4 mb-4" th:href="@{/historial}">Historial</a>
+      <a class="btn btn-primary mt-4 mb-4" th:href="@{/employees}">Reportes</a>
+    </div>
+
     <h1 class="pb-2 mb-4 border-bottom">Editar Empleado</h1>
     <form method="post" th:action="@{'/updatePhoneSalary'}" class="col-4" th:object="${employee}">
       <input th:value="${employee.idEmpleado}" name="idEmpleado" type="hidden"/>
